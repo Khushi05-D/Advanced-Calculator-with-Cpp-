@@ -9,20 +9,20 @@ void arithmetic()
     float A = 0;  
     float B = 0;  
          
-    cout<<"Select opeartion\n";  
-    cout<<"[1] Addition\n";  
-    cout<<"[2] Substraction\n";  
-    cout<<"[3] Product\n";  
-    cout<<"[4] Division\n";  
+    cout<<"Select opeartion"<<endl;  
+    cout<<"[1] Addition"<<endl;  
+    cout<<"[2] Substraction"<<endl;  
+    cout<<"[3] Product"<<endl;  
+    cout<<"[4] Division"<<endl;  
          
     cin>>op;  
-    cout<<"\nEnter the number:";  
+    cout<<"Enter the number:"<<endl;  
     cin>>A;  
          
-    cout<<"\nEnter second number:";  
+    cout<<"Enter second number:"<<endl;  
     cin>>B;  
          
-    cout<<"\nResult: ";  
+    cout<<"Result: "<<endl;  
          
     switch(op)
 	{  
@@ -49,9 +49,9 @@ void trigonometric()
 {  
     int op = 0;  
     float val = 0.0;  
-    cout<<"Select\n";  
-    cout<<"[1] Sine\n";  
-    cout<<"[2] Cosine\n";  
+    cout<<"Select"<<endl;  
+    cout<<"[1] Sine"<<endl;  
+    cout<<"[2] Cosine"<<endl;  
     cout<<"Op: ";  
     cin>>op;  
     cout<<"Enter value: ";  
@@ -93,22 +93,21 @@ void exponential()
     
 int main()
 {  
-    int sel = 0;  
+    int ch = 0;  
     char choice = 'y';  
-    cout<<"Advanced Calculator\n";  
+    cout<<"Advanced Calculator"<<endl;  
     
-    cout<<"[1] Arithmetic\n";  
-    cout<<"[2] Trigonometric\n";  
-    cout<<"[3] Exponential\n";  
-    cout<<"[4] Logarithmic\n";  
-    cout<<"Your choice:";  
+    cout<<"[1] Arithmetic"<<endl;  
+    cout<<"[2] Trigonometric"<<endl;  
+    cout<<"[3] Exponential"<<endl;  
+    cout<<"[4] Logarithmic"<<endl;   
          
     while(choice == 'y')
 	{  
-        cout<<"Enter the type of operation you want to calculate\n";  
-        cin>>sel;  
+        cout<<"Enter the type of operation you want to calculate:"<<endl;  
+        cin>>ch;  
               
-        switch(sel)
+        switch(ch)
 		{  
             case 1:  
                 arithmetic();  
@@ -134,4 +133,4 @@ int main()
         }  
     }            
     return 0;  
-}  
+} 
